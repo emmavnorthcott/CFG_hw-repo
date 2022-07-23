@@ -30,6 +30,7 @@ class CashRegister:
 
 register_1 = CashRegister()
 
+
 register_1.add_item({'Skirt': 25.00})
 register_1.add_item({'Shoes': 50.00})
 register_1.add_item({'Bag': 45.50})

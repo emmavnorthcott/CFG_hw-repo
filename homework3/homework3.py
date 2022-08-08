@@ -25,8 +25,8 @@ IMPORTANT:
 
 """
 from collections import Counter
-characters = "asdfghjklpoiuytrewqzxcvbnm"
-phrase = "love"
+characters = "apple"
+phrase = "ape"
 character_list = []
 phrase_list = []
 
@@ -35,7 +35,22 @@ def generate_phrase(characters, phrase):
         character_list.append(a)
     for b in phrase:
         phrase_list.append(b)
-    print(character_list, phrase_list)
-    print(all(char in character_list for char in phrase_list))
+    for l in phrase_list:
+        #print(l)
+        if l in character_list:
+            character_list.remove(l)
+            #print(True)
+        elif l not in character_list:
+            #print(False)
+            return False
+    return True
+    # common_character = (list(set(character_list).intersection(phrase)))
+    # print(len(common_character) == len(phrase_list))
+    # print(all(char in character_list for char in phrase_list))
+    # list3 = set(character_list) & set(phrase_list)
+    # list4 = sorted(list3, key=lambda k: character_list.index(k))
+    # print(list4)
 
-generate_phrase(characters, phrase)
+
+x = generate_phrase(characters, phrase)
+print(x)

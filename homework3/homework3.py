@@ -25,8 +25,8 @@ IMPORTANT:
 
 """
 from collections import Counter
-characters = "apple"
-phrase = "ape"
+characters = "sjfhskjgsfnsrghsodfh"
+phrase = "john"
 character_list = []
 phrase_list = []
 
